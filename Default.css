@@ -1,0 +1,1129 @@
+/*=============================*/
+/*====This is SubRedditOftheDayV3====*/
+/*=============================*/
+/*===Created by BauerUK & Jaxspider===*/
+/*=============================*/
+
+
+
+/*=============================*/
+/*Warning when submiting*/
+
+form.submit > .formtabs-content > .spacer:first-child::after {
+display: block;
+margin-top: 14px;                                                                  
+font-size: 16px;
+font-weight: bold;
+color: #080808;
+background-color: #ffff00;                                                              
+text-align: center;
+border: 2px solid  #ff0800;
+padding-top: 5px;
+padding-bottom: 1px;
+content: url(%%warning%%) "THIS ISN'T THE DEV SUB - only completed features go here. If your feature isn't completed, post it in /r/SROTD_Dev!";
+
+}
+
+
+/*=============================*/
+/*Message for submitting reports - NeonGreenTiger*/
+.report-button .option:not(.error):hover:before {
+    color: #E0CB38;
+    background-color: #1F1F1F;
+    border: 1px solid #333;
+    border-radius: 5px;
+    content: "Please message the moderators if you click report, otherwise we won't know why it was reported.";
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 75px;
+    margin-top: 5px;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    z-index: 1000
+    }
+
+/*=============================*/
+/*Top Header banner*/
+
+#header {
+	border-color: #A8CBEE;	
+        background: url(%%GRAN3%%) repeat bottom left;
+        border: none;
+	/*background-color: #555;*/
+}
+
+/* HEY THERE NEW NOMINATE A SUBREDDIT BUTTON CSS IS RIGHT HERE DONT DELETE IT YOU :"( */
+
+
+
+
+.side .md a[href*="Nomination"]:before {
+    display: block;
+    height: 70px;
+    width: 280px;
+    background: url(%%nominate2%%);
+    position: absolute;
+    z-index: 1000;
+    content: "";
+    left: 0px;
+    top: 0px
+}
+
+.side .md  a[href*="Nomination"] {
+    color: #336699;
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 20px;
+    background: url(%%nominate2%%);
+    border: 0px solid #C4DBF1;
+    font-weight: bold;
+    height: 70px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.side .md blockquote:nth-of-type(1) {
+    position: absolute;
+    top: 95px;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-left: none;
+}
+
+
+/* END OF NEW BUTTON CSS PLS DONT KILL ME  */
+
+/* FIXING THE SEARCH */
+
+.infobar {
+font-size: small;
+color: black;
+}
+
+#searchexpando {
+position: relative;
+z-index: 9999;
+}
+
+.morelink {
+z-index: 1;
+}
+
+#search {
+position: relative;
+z-index: 9999;
+}
+
+.menuarea {
+margin: 55px;
+}
+
+/*=============================*/
+/* Body */
+
+body {
+    background-color:#E8E8E8 !important;
+    /*F2F0E6 is very light yellow gray, 333333 is very dark gray*/
+}
+
+/*=============================*/
+/*Title text replaced with Image in header*/
+
+.pagename a {
+    display: block;                                               /*This hides the text link*/
+    background-image: url(%%Title%%);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-size: 0px;
+    padding: 60px 145px 0 0;
+    color: #364657;
+    left: 100px;
+    position: absolute;
+    top: 30px;
+    }
+.pagename a:hover {
+    background-image: url(%%TitleHover%%);
+    }
+
+/*=============================*/
+/* Top Bar subreddits list*/
+
+#sr-header-area {
+	background-color: #F3F3F3;                              /*This could be E0CB38*/
+	padding: 0px;                                           /*This used to be 8px*/
+	border: 0;
+	margin-bottom: 5px;                                     /*This used to be 5px*/
+}
+
+/*=============================*/
+/*Tab Buttons*/
+
+.tabmenu {
+	padding: 5px 10px;
+}
+
+.tabmenu li a {
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	padding: 5px 10px;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+.tabmenu li a {
+    background-color: #1F1F1F;
+    color: #E0CB38 !important;
+    font-weight: bold;
+}
+
+.tabmenu li.selected a {
+	border-color: #DEDEDE;
+	background-color: #DEDEDE;
+        color:black !important;
+        font-weight: bold;
+}
+
+.tabmenu li a:hover {
+    background-color: #E0CB38 !important;
+    color: #1F1F1F !important;
+    font-weight: bold;
+    }
+
+
+/*=============================*/
+/* Side bar related stuff */
+
+#search {
+	
+}
+
+body > .side {
+	background-color: #3D3D3D;
+	color: #FFF;
+	margin-top: 40px;
+	margin-right: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#search {
+    position: absolute;
+    margin-top: -40px;
+    background-color: #FFF;
+    }
+
+/*=====================*/
+/*announcement sticky*/
+/*
+    div.content {
+    margin-top:50px;
+    }*/
+.titlebox form {
+    position: static !important;
+    }
+.side h4:nth-of-type(1) {
+    position:absolute !important;
+    display: block !important;
+    top: 20px !important;
+    left: 100px !important;
+    background-color: #F2F2F2;
+    color: #555555;
+    text-align: left !important;
+    margin: 15px !important;
+    border-radius: 8px;
+    width: 56% !important;
+    padding: 7px 0px 7px 40px !important;
+    /*background-image: url(%%announceicon%%);
+    background-repeat: no-repeat;
+    background-position:left;*/
+    }
+
+
+/*=============================*/
+/*Length of sidebar darkgray box*/
+
+.side .titlebox {
+	background-color:#1F1F1F;
+	color: #CCC;
+	margin-bottom: 600px;        /*1250 when double tables, previously was 830 when single table, last was 1050 due to new moderation box.*/                      
+	padding: 10px;
+}
+
+.side .titlebox h1.redditname,
+.side .titlebox h1.redditname a
+{
+	display: none;
+}
+
+/*=============================*/
+/*Makes the sidebox below submit a link & create community transparent*/
+
+.side form.toggle {
+    background-color:transparent !important;
+}
+.sidebox .spacer {
+    background-color:transparent !important;
+}
+
+
+.titlebox form.toggle { 
+	background-color: transparent;
+	background-image: none;
+	padding: 0;
+}
+
+.titlebox .fancy-toggle-button {
+	float: right;
+	margin: 0;
+}
+
+.titlebox .fancy-toggle-button a {
+	padding: 5px;
+	/*background-image: none;*/
+}
+
+.leavemoderator-button {
+	clear: both;
+	padding-top: 10px;
+}
+
+.titlebox .bottom {
+	display: none;
+}
+
+/*=============================*/
+/*Voting and Post Information Box.*/
+
+.linkinfo {
+    background-image: url(%%ALOT%%);
+    background-color: #E0CB38;
+    border: 1px solid #E0CB38;               /*E0CB38 = gold, A8CBEE = nice blue color*/
+    color: #1F1F1F;                          /*text-transform: lowercase !important;*/
+    text-decoration: none;
+    margin-bottom: -200px;
+}
+
+/*=============================*/
+/* custom submission score text in Voting linkInfo box*/
+
+.score .number:after {
+    content: " People Loved / Hated it";
+    font-size: 15px
+    }
+.score .word {
+    display: none
+    }
+
+/*=============================*/
+/* Hides text background color in admin box */
+
+.icon-menu a {
+    background-color: transparent
+    }
+
+/*=============================*/
+
+.side .titlebox .number,
+.side .titlebox .word 
+{
+	padding: 5px 0;
+	display: inline-block;
+}
+
+
+
+/*=============================*/
+/*Award Image in the sidebar, Plan on making it clickable*/
+
+.side .titlebox .usertext {
+	position: absolute;
+	padding-top: 220px;
+	background-image: url(%%AWARD%%);
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+	height: 520px;
+	width: 280px;
+	font-size: 1em;
+	line-height: 120%;
+	margin-bottom: 140px;
+}
+
+
+
+.side .titlebox .usertext strong {
+	color: #FFF;
+}
+
+.side .titlebox .usertext hr {
+	border: 1px solid #555;
+	border-top-width: 0;
+	height: 1px;
+}
+
+.side .titlebox .usertext blockquote {
+	background-color: #FFF;
+	border: 0;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	margin-left: -10px;
+}
+#search input {
+text-align:center;
+}
+
+.side .titlebox .usertext a {
+	color: #E0CB38;
+}
+
+.side .titlebox .usertext h1,
+.side .titlebox .usertext h2,
+.side .titlebox .usertext h3,
+.side .titlebox .usertext h4,
+.side .titlebox .usertext h5
+/*.side .titlebox .usertext h6*/
+{
+	color: #FFF;
+}
+
+
+/*=============================*/
+/*Custom Subscribe button*/
+
+.fancy-toggle-button .add {
+    display: none;
+    background-image: url(%%SBG3%%);
+    background-position: 0px;
+}
+
+.fancy-toggle-button .remove {
+    display: none;
+    background-image: url(%%SBR3%%);
+    background-position: 0px; 
+}
+
+
+/*=============================*/
+/*Login, I think*/
+
+.login-form-side {
+	border: 0;
+}
+
+.login-form-side a {
+	color: #E0CB38;
+}
+
+/*=============================*/
+/* Karma Bar or bottom right menu */
+
+#header-bottom-right {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 4px;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px
+    }
+#header-bottom-right a {
+    color: #E0CB38 
+    }
+#header-bottom-right b {
+    color: #E0CB38 
+    }
+
+/* RES toggle button */
+#userbarToggle{
+    background-color:#E0CB38 !important;
+    color: #1F1F1F !important;
+    border-right:0px !important;
+    }
+
+
+
+/*=============================*/
+/* Sidebar Title now a logo */
+
+.titlebox h1 a {
+    background-image: url(%%Logo145x60%%);
+    background-repeat: no-repeat;
+    background-position: 0 -0px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 65px;
+    text-indent: -9999px;
+    padding: 10px 0
+    }
+.titlebox h1 a:hover {
+    background-image: url(%%Title2%%);
+    }
+
+/*=============================*/
+/* mail */
+#mail.havemail {
+    background-image: url(%%MM%%);
+    background-repeat: no-repeat;
+    background-position: 0 0
+    }
+
+/*=============================*/
+/* mod mail */
+
+#modmail.havemail {
+    background-image: url(%%Goldmod2%%);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 15px;
+    background-position: 0 0;
+    }
+
+
+/*=============================*/
+/* Replace "readers" with something else */
+
+div.titlebox .subscribers span.word { display: none !important; }
+div.titlebox .subscribers span.number:after { content: " Followers" }
+
+div.titlebox .users-online span.word { display: none !important; }
+div.titlebox .users-online span.number:after { content: " Currently finding new subreddits" }
+
+/*=============================*/
+/*Twitter Feed Graphic*/ 
+
+a[href="http://twitter.com/SRotD"]:after { 
+width: 90px; 
+height: 18px; 
+content: "";
+margin: 5px 0 0 0; 
+background-image: url(%%Final%%); 
+background-position: -0px; 
+display: inline-block; 
+cursor: pointer;
+position: relative;
+}
+
+
+/*=============================*/
+/*Google Docs Icon Graphic*/ 
+
+a[href="https://spreadsheets.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0Ak2FnIe8J2gxdHd1ckxkSWNaTUtWaWtoX0poVE54cmc&output=html"]:after { 
+width: 24px; 
+height: 23px; 
+content: "";
+margin: 5px 0 0 0; 
+background-image: url(%%GDS%%); 
+background-position: -0px; 
+display: inline-block;
+position: relative; 
+/*cursor: pointer*/
+}
+
+
+
+/*============================*/
+/* Flair */
+
+.flair {
+
+    }
+
+.flair:after {
+
+    display: inline-block;
+}
+
+.flair-WRITER {
+    padding: 1px 4px 1px 4px;
+    border: 0px solid black !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #595959; /*1F1F1F*/
+    font-weight: 700;
+    }
+.flair-WRITER {
+    color: #E0CB38;
+    }
+
+/*=============================*/
+/*  Fancy no thumbnail */
+
+.thumbnail.default {
+    background-image: url(%%Thumb350%%) !important;
+    background-position: top left
+    }
+.thumbnail.self {
+    background-image: url(%%Thumb350%%) !important;
+    background-position: top left
+    }
+
+/*=============================*/
+/* Links Colors & size*/
+
+.title {
+    font-weight: bold !important;
+    font-size: 1.20em !important
+    }
+.title a.title {
+    color: #1F1F1F !important
+    }
+.title a.title:visited {
+    color: #8F8F8F !important;          /*This was a9a9a9*/
+    }
+
+/*.author {
+    color: #00305F !important
+    }
+.link .score {
+    min-width: 40px !important
+}
+*/
+
+    
+.midcol {
+    min-width: 60px
+    }
+
+.link .usertext .md { 
+	padding: 5px 10px; 
+}
+
+.link .md > blockquote { 
+	border: 1px solid #777; 
+	background: #eee; 
+	margin: 0px; 
+	font-weight: bold; 
+	color: #444; 
+	padding: 0px 10px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+.link .md blockquote blockquote { 
+	border: 1px solid #bbb; 
+	background: #fafafa; 
+	margin: 0px 0 1em 0; 
+	font-weight: normal; 
+	color: black; 
+	padding: 2px 10px; 
+	border-bottom-width: 2px; 
+}
+
+.link .md h1 { 
+	margin: 0; font-weight: bold; 
+}
+
+.link .md h1 a { 
+	font-size: 1.65em; 
+	letter-spacing: -0.02em; 
+	text-shadow: #ddd 0px 2px 2px; 
+}
+
+.link .md h1 a:hover { 
+	color: #47a 
+}
+
+.link .md h2 { 
+	margin: 1em 0 .3em 0px; 
+	font-size: 1.25em; 
+}
+
+.link .md hr { 
+	border: none; 
+	border-bottom: 1px dotted #777; 
+}
+
+.link .md ul { 
+	margin: 10px 1em; 
+}
+
+
+/*=============================*/
+/* This code disables the downvote button. */
+
+.thing.link .arrow.down { display: none }                                    /* Hide the down-arrow */
+
+/* .arrow.down { visibility: hidden; display: none } */                  /* This code hides all downvotes. */
+
+
+/*=============================*/
+/* Custom up and down arrows */
+
+.arrow {
+    height: 21px;
+    width: 18px;
+}
+.arrow.upmod { 
+ background:url(%%AWUP%%) 0 0;
+}
+.arrow.up { 
+ background:url(%%GAUP%%) 0 0;
+}
+
+.arrow.downmod { 
+ background:url(%%4R%%) 0 0;
+}
+.arrow.down { 
+ background:url(%%4G%%) 0 0;
+}
+
+
+.midcol[style] {width: 50px !important}
+.comment .midcol {width:18px}
+.gadget .midcol {width:18px; margin:0} 
+
+
+
+
+.morelink {
+    background-image: none !important;
+    background-color: #E0CB38 !important;
+    border: none;
+    color: black !important;
+} 
+
+.morelink a {
+    color:#1F1F1F !important;
+}
+
+.morelink a:hover {
+    background-color: #1F1F1F !important;
+    color: #E0CB38 !important;
+}
+
+.morelink .nub {
+display:none !important;
+}
+
+.subtitle {
+    color:#E0CB38  !important;
+    background-color: transparent !important;
+}
+
+/*=============================*/
+/*Hides create community button*/
+
+.side .sidebox.create {
+    display: none
+    }
+
+/*=============================*/
+/* This changes the color  & sizeof the number voted */
+
+.likes div.score.likes {                         
+    color: black;
+    font-size: 22px;                             /*Originally this was 13px*/
+    font-weight: bold;
+    /* text-shadow: grey 0px 0px 1px; */
+   /*  margin-right: 100px */
+    }
+
+
+/*=============================*/
+/*Huge comment font, to use just put ####before your text*/
+/*Sarcatic comment font, to use just put #####before your text*/
+
+
+h4{
+font: 250% times !important;
+color: gold;
+text-shadow: black 1px 2px 1px;
+}
+
+h5{
+font: 135% comic !important;
+color: #0EE32A; /*6B30B3*/
+text-shadow: yellow 1px 0px 30px;
+}
+
+h6{
+font: 150% comic !important;
+color: #6B30B3;
+}
+
+h7{
+font: 70% impact !important;
+color: #3078b3;
+}
+
+/*=============================*/
+/*ICONS*/
+
+
+a[href="/award"]:after { content: url(%%Thumb3100%%) }
+a[href="/3FM"]:after { content: url(%%FilmStrip%%) }
+
+/*
+a[href="http://redd.it/15jl15/#new"]:after { 
+    width: 280px; height: 260px;
+    content: ""; 
+    background-image: url(%%AD2802%%);             
+    background-position: -0px;
+    display: inline-block;
+    position: relative;
+ }
+*/
+
+a[href="http://redd.it/21l9xo"]:after { 
+    width: 280px; height: 280px;
+    content: ""; 
+    background-image: url(%%SIP3%%);             
+    background-position: -0px;
+    display: inline-block;
+    position: relative;
+ }
+
+/*=============================*/
+/*Footer */
+
+.footer-parent {
+    background-image: url(%%SROTD220%%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 100px;
+/*    margin-bottom: 10px !important;*/
+    }
+
+/*=============================*/
+
+/*
+
+RECENT SUBREDDITS OF THE DAY
+Added 2011-11-20 by BauerUK
+
+The idea is that we take a table, and float the THEAD to the left and the
+TBODY to the right.
+
+Then, using a combination of STRONG, EM and STRONG > EM, in the TH's, we
+give the different color effects
+
+I'll try to walk through as best I can step by step, although the CSS does
+get messy and hacky, it shouldn't be too difficult to follow (hoepfully!)
+
+Regarding the markdown syntax, it's as follows:
+
+
+	*TODAY* **${DAY}** **_${DATE}_**  | **${DAY-1}** **_${DATE-1}_**    |  **${DAY-2}** **_${DATE-2}_**
+	----------------------------------|---------------------------------|------------------------------
+	[/r/${SROTD}](${SROTD_URL})       | [/r/${SROTD-1}](${SROTD_URL-1}) | [/r/${SROTD}-2](${SROTD_URL-2})
+
+
+You could add as many columms as you wanted here, provided that you alter
+the table height to reflect the new changes.
+
+Example markdown:
+
+	*TODAY* **Sun** **_Nov 20_**           | **Sat** **_Nov 19_**              | **Fri** **_Nov 18_**
+	---------------------------------------|-----------------------------------|---------------------------
+	[/r/Spam](http://redd.it/abc1234)      | [/r/Eggs](http://redd.it/abc1234) | [/r/Beans](http://redd.it/abc1234)
+
+
+The recommended formats for each (obvviously with some tweaking these
+can be changed to something you think looks better):
+
+---------------------------------------------------------------------------
+
+DAY
+
+	Three-character word for the day
+
+	e.g. MON, TUE, WED, THU, FRI, SAT, SUN
+
+---------------------------------------------------------------------------
+
+DATE
+
+	MMM DD
+
+	e.g. Dec 25, Feb 17, Jun 01
+
+---------------------------------------------------------------------------
+
+SORTD
+
+	The subreddit name
+
+	e.g. /r/something
+
+---------------------------------------------------------------------------
+
+SORTD_URL
+
+	The full URL to the SROTD post
+
+---------------------------------------------------------------------------
+
+*/
+
+/* first things first, change everything to BLOCK elements. this essentially
+removes the idea of the table being a table, and now we can kind of treat them
+as a collection of normal elements, like a DIV */
+.side table {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+	/* we specify the height here because we're dong a bunch of floating next*/
+	height: 160px;
+	
+	margin: 25px 0;
+}
+
+/* as mentioned, float the HEAD left... */
+.side table thead {
+	float: left;
+	display: block;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* we also FLOAT:LEFT here, but this just puts the BODY snuggly next to the head */
+.side table tbody {
+	display: block;
+	width: 80%;
+	border: 0;
+	float: left;
+}
+
+.side table thead tr,
+.side table tbody tr 
+{
+	display: block;
+}
+
+/* some rules that apply to both "sides" of the table (HEAD and BODY) */
+.side table thead tr th,
+.side table tbody tr td
+{
+	display: block;
+	padding: 10px;
+	width: auto;
+	border: 0;
+	background-color: #666;
+	padding: 0;
+	margin-bottom: 3px;
+	padding: 10px 0;
+	height: 30px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+/*  some styles for today's row (make it darker) */
+.side table thead tr th:first-child,
+.side table tbody tr td:first-child {
+	background-color: #2E2E2E; /*222 2E2E2E 0077FF*/
+}
+
+.side table tbody tr td:first-child a:hover {
+	background-color: #222;
+}
+
+/* specific rules for the BODY (right hand side) */
+.side table tbody tr td {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 0;
+	height: 40px;
+}
+
+/* specific rules for the HEAD (left hand side) */
+.side table thead tr th {	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* the actual post link (which we basically set to fill the entire height/width) */
+.side table tbody tr td a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 8px;
+	color: #FFF !important;
+	margin: 0 6px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-decoration: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.side table tbody tr td a:hover {
+	background-color: #555555;
+}
+
+.side table thead tr th {
+	text-align: right;
+}
+
+/* 
+	using !important alot here, might be unnecessary, but since we're screwing
+	around with STRONG and EM, we want to override anything that reddit
+	has given us prior to our stylesheet being run, including inline styles
+*/
+
+/* quick reset */
+.side table thead tr th strong,
+.side table thead tr th em,
+.side table thead tr th strong > em
+{
+	display: block !important;
+	text-decoration: none !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	text-transform: uppercase !important;
+	color: #CCC !important;                                /*Change the font of the days*/
+}
+
+/* TODAY title */
+.side table thead tr th > em {
+	font-size: 9px !important;
+	color: #ffe749 !important;	
+	font-weight: bold;
+	
+	/* 
+		used to re-align the first (TODAY) cell to the center because it has an 
+		extra line of text for the TODAY title
+	*/
+	margin-top: -8px;
+	
+}
+
+/* DAY */
+.side table thead tr th > strong {
+	font-size: 18px !important;
+	font-weight: normal;
+}
+
+/* DATE */
+.side table thead tr th > strong > em {
+	font-size: 9px !important;
+	font-weight: bold;
+}
+
+/* END: RECENT SROTD LIST */
+
+
+
+/*=============================*/
+/*SUBREDDIT BUTTONS*/
+
+/* Link to the Subreddits */
+a[href$="http://reddit.com/r/RedditorOfTheDay"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -0px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/NewReddits"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -50px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/PimpMyReddit"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -100px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/FindaReddit"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -150px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/MultiReddit"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -200px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/RedditTools"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -250px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/RedditLists"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -300px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/Serendipity"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -350px;
+    display: inline-block;
+    position: relative
+    }
+a[href$="http://reddit.com/r/BestOf"] {
+    text-indent: -9999px;
+    background-image: url(%%Layout2%%);
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-position: 0px -400px;
+    display: inline-block;
+    position: relative
+    }
+
+.sidecontentbox .helplink + .title h1 { font-size: 0 !important }
+.sidecontentbox .helplink + .title h1:before { font-size: 10pt !important; content: "AWESOME WRITERS" }
+
