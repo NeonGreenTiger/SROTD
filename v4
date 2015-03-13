@@ -1,0 +1,1235 @@
+/*                                                                                                      
+   SSSSSSSSSSSSSSS RRRRRRRRRRRRRRRRR        OOOOOOOOO     TTTTTTTTTTTTTTTTTTTTTTTDDDDDDDDDDDDD                                                          444444444               000000000     
+ SS:::::::::::::::SR::::::::::::::::R     OO:::::::::OO   T:::::::::::::::::::::TD::::::::::::DDD                                                      4::::::::4             00:::::::::00   
+S:::::SSSSSS::::::SR::::::RRRRRR:::::R  OO:::::::::::::OO T:::::::::::::::::::::TD:::::::::::::::DD                                                   4:::::::::4           00:::::::::::::00 
+S:::::S     SSSSSSSRR:::::R     R:::::RO:::::::OOO:::::::OT:::::TT:::::::TT:::::TDDD:::::DDDDD:::::D                                                 4::::44::::4          0:::::::000:::::::0
+S:::::S              R::::R     R:::::RO::::::O   O::::::OTTTTTT  T:::::T  TTTTTT  D:::::D    D:::::D      vvvvvvv           vvvvvvv                4::::4 4::::4          0::::::0   0::::::0
+S:::::S              R::::R     R:::::RO:::::O     O:::::O        T:::::T          D:::::D     D:::::D      v:::::v         v:::::v                4::::4  4::::4          0:::::0     0:::::0
+ S::::SSSS           R::::RRRRRR:::::R O:::::O     O:::::O        T:::::T          D:::::D     D:::::D       v:::::v       v:::::v                4::::4   4::::4          0:::::0     0:::::0
+  SS::::::SSSSS      R:::::::::::::RR  O:::::O     O:::::O        T:::::T          D:::::D     D:::::D        v:::::v     v:::::v                4::::444444::::444        0:::::0 000 0:::::0
+    SSS::::::::SS    R::::RRRRRR:::::R O:::::O     O:::::O        T:::::T          D:::::D     D:::::D         v:::::v   v:::::v                 4::::::::::::::::4        0:::::0 000 0:::::0
+       SSSSSS::::S   R::::R     R:::::RO:::::O     O:::::O        T:::::T          D:::::D     D:::::D          v:::::v v:::::v                  4444444444:::::444        0:::::0     0:::::0
+            S:::::S  R::::R     R:::::RO:::::O     O:::::O        T:::::T          D:::::D     D:::::D           v:::::v:::::v                             4::::4          0:::::0     0:::::0
+            S:::::S  R::::R     R:::::RO::::::O   O::::::O        T:::::T          D:::::D    D:::::D             v:::::::::v                              4::::4          0::::::0   0::::::0
+SSSSSSS     S:::::SRR:::::R     R:::::RO:::::::OOO:::::::O      TT:::::::TT      DDD:::::DDDDD:::::D               v:::::::v                               4::::4          0:::::::000:::::::0
+S::::::SSSSSS:::::SR::::::R     R:::::R OO:::::::::::::OO       T:::::::::T      D:::::::::::::::DD                 v:::::v          ......              44::::::44 ......  00:::::::::::::00 
+S:::::::::::::::SS R::::::R     R:::::R   OO:::::::::OO         T:::::::::T      D::::::::::::DDD                    v:::v           .::::.              4::::::::4 .::::.    00:::::::::00   
+ SSSSSSSSSSSSSSS   RRRRRRRR     RRRRRRR     OOOOOOOOO           TTTTTTTTTTT      DDDDDDDDDDDDD                        vvv            ......              4444444444 ......      000000000     
+ 
+*/        
+  
+/*SubredditOfTheDay New CSS v. 4.0*/  
+/*As written by /u/NeonGreenTiger with the help of /u/jaxspider.*/
+/*Thanks to /u/RespectfullyYours for a lot of the design suggestions.*/
+
+
+/*NOTE: FEEL FREE TO USE THIS, BUT PLEASE GIVE CREDIT!!!!!*/
+  
+/*Table of Contents
+1. Header
+2. Body
+3. Posts
+4. Arrows
+5. Expando Buttons
+6. Sidebar
+7. Text Style
+8. Flair
+9. Footer
+10. Toolbox Tweaks
+11. RES
+12. Signatures
+13. Wiki
+14. Submit Page
+15. Modmail Page
+16. Subreddit Settings
+17. Search Page*/
+
+/*Change log
+ 13MAR14 - Launch!
+ */
+  
+/*=============
+*             *
+*   Header    *
+*             *
+=============*/
+#header {
+    height: 121px;
+    border-bottom: 3px solid #E0CB38;
+    /*background: url(%%curtain%%) repeat bottom left;*/
+    background: url(%%fireworks%%) center;
+}
+
+#header-bottom-right {
+    top: 129px !important;
+    /*height: 35px;*/
+    background-color: #292929 !important;
+    border: none;
+    display: inline-block;
+    border-top-left-radius: 0px !important;
+    padding: 4px 5px 17px 5px;
+    margin-right: 5px;
+}
+
+#header-bottom-right.res-navTop {
+    top: 129px !important;
+    /*height: 35px;*/
+    background-color: #292929 !important;
+    border: none !important;
+    padding: 5px !important;
+}
+
+/* Image Title Replace */
+.pagename a {
+    display: inline-block;                       
+    /*text-align: center;*/
+    background-image: url(%%NewLOGO-White%%); /*Logo145x60*/
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-size: 0px;
+    padding: 70px 180px 0 0; /*60px 145px 0 0;*/
+    color: #364657;
+    /*position: absolute;
+    top: 40px;*/
+    }
+.pagename a:hover {
+    background-image: url(%%NewLOGO-Gold%%); /*Title2*/
+    }
+
+
+#userbarToggle {
+    background: transparent !important;
+    color: white !important;
+    border-right: 1px solid white !important;
+}
+#sr-header-area{
+    background: #000 !important;
+    color: white !important;
+}
+
+#sr-header-area a {
+    color: white !important;
+}
+#sr-header-area a:visited {
+    color: #E0CB38 !important;
+}
+/*#header-bottom-left { text-align: center; }*/
+#header-img { 
+    left: 10px; 
+}
+
+
+/* TabMenu */
+.tabmenu {
+    left:-80px;
+    border:0;
+    border-radius:0;
+    text-transform: uppercase !important;
+    z-index:11;
+    padding:2px 10px 2px 0;
+    position:absolute;
+    top: 124px;
+    margin-left:100px;
+    list-style-type:none;
+    white-space:nowrap;
+    display:inline-block;
+}
+
+.tabmenu li {
+    /*height:18px*/
+    display: inline-block;
+    background:none;
+    letter-spacing: 1px;
+	font-size: 1.05em;
+	/*margin: 0;*/
+}
+
+.tabmenu li a {
+    padding:5px 14px 5px 14px;
+	border-top: 1px solid #372a17;
+	border-left: 1px solid #000;
+	border-bottom: 0;
+	font-weight: normal;
+	background-repeat: repeat-x;
+	background-color:#CFCFCF; /*black*/
+	color: black; /*white*/
+    background:none;
+    border:none;
+    display:block;
+    /*color:#494848;*/
+}
+
+.tabmenu li a {
+    color:white;
+    padding:5px 14px 5px 14px;
+    /*border-top: 1px solid #372a17;
+    border-left: 1px solid #000;
+    border-bottom: 0;*/
+    font-weight: normal;
+    background-color: #292929; /*cfcfcf*/
+}
+
+.tabmenu li a:hover {
+    background-color: #E0CB38 !important;
+    color: black !important;
+}
+
+.tabmenu li.selected a {
+    color: black !important;
+    padding: 5px 14px 5px 14px;
+    /*border-top: 1px solid #372a17;
+    border-left: 1px solid #000;
+    border-right: none !important;
+    border-bottom: 0;*/
+    border: none !important;
+    background: transparent;
+    font-weight: normal;
+    /*background-color: #E0CB38 !important;*/
+}
+
+.menuarea {
+    margin: 35px 0 0 0;
+}
+
+/*=============
+*             *
+*     Body    *
+*             *
+=============*/
+
+body {
+    background: #ADADAD !important; /*#333*/
+    border-radius: 0 !important;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover { 
+    color: #E0CB38 !important;
+}
+
+a:visited { 
+    color: #E0CB38 !important;
+}
+
+.stickied.link.self {
+    background: #4a4a4a!important;
+}
+
+.thing.stickied a.title/*, 
+.thing.stickied a.title:visited, 
+.thing.stickied a.title.visited */{
+    color: white !important;
+/*  background: linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+    animation: rainbowbar 1s linear infinite;
+    -webkit-animation: rainbowbar 1s linear infinite;*/
+}
+/*Rainbow bar on the sticky... for important uses only! I'M LOOKING AT YOU LURLUR! NO ACTIVATING JUST BECAUSE.*/
+/*@keyframes rainbowbar {
+  0%,100% { background: linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); }
+  14% { background: linear-gradient(left,orange,yellow,green,blue,indigo,violet,red); }
+  14% { background: linear-gradient(left,orange,yellow,green,blue,indigo,violet,red); }
+  28% { background: linear-gradient(left,yellow,green,blue,indigo,violet,red,orange); }
+  42% { background: linear-gradient(left,green,blue,indigo,violet,red,orange,yellow); }
+  57% { background: linear-gradient(left,blue,indigo,violet,red,orange,yellow,green); }
+  71% { background: linear-gradient(left,indigo,violet,red,orange,yellow,green,blue); }
+  85% { background: linear-gradient(left,violet,red,orange,yellow,green,blue,indigo); }
+}
+ 
+@-webkit-keyframes rainbowbar {
+  0%,100% { background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); }
+  14% { background: -webkit-linear-gradient(left,orange,yellow,green,blue,indigo,violet,red); }
+  14% { background: -webkit-linear-gradient(left,orange,yellow,green,blue,indigo,violet,red); }
+  28% { background: -webkit-linear-gradient(left,yellow,green,blue,indigo,violet,red,orange); }
+  42% { background: -webkit-linear-gradient(left,green,blue,indigo,violet,red,orange,yellow); }
+  57% { background: -webkit-linear-gradient(left,blue,indigo,violet,red,orange,yellow,green); }
+  71% { background: -webkit-linear-gradient(left,indigo,violet,red,orange,yellow,green,blue); }
+  85% { background: -webkit-linear-gradient(left,violet,red,orange,yellow,green,blue,indigo); }
+}*/
+.rank {
+    display: none !important;
+}
+
+.content {
+    background: #ADADAD; /*#333*/
+}
+
+.md {
+    color: #000;
+}
+.tagline time {
+    color: #FFF !important;
+}
+
+#siteTable .thing {
+    border:1px solid #000;
+    box-shadow:1px 1px 3px 0 #000;
+    padding:15px 15px 15px 10px;
+    position:relative;
+    z-index:auto;
+    margin-right:320px;
+    background:#292929
+}
+
+#siteTable .thing:hover {
+    border:1px solid #E0CB38;
+    box-shadow:1px 1px 3px 0 #c9b632
+}
+
+#siteTable .thing:active {
+    border:1px solid #E0CB38!important;
+    box-shadow:1px 1px 3px 0 #E0CB38!important
+}
+
+#siteTable .thing>.link .rank {vertical-align:middle!important}
+
+.linklisting {
+    padding: 30px 0 0 0;
+}
+
+.tagline .score {
+    color: #E0CB38;
+}
+
+.thumbnail.default {
+    background-image: url(%%Thumb350%%) !important;
+    background-position: top left
+    }
+.thumbnail.self {
+    background-image: url(%%Thumb350%%) !important;
+    background-position: top left
+    }
+
+/*=============
+*             *
+*    Posts    *
+*             *
+=============*/ 
+.commentarea .comment,
+.commentarea .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    border: 1px solid #000; 
+	background-color: #666/*#404040*/!important; 
+	color: #FFF !important; 
+	padding: 5px 10px;
+}
+
+.commentarea .comment .comment,
+.commentarea .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	background-color: #888!important; 
+	color: #000 !important; 
+	box-shadow:1px 1px 3px 0 #000000;
+	Padding: 5px 10px;
+}
+
+.linkinfo {
+    background: url(%%Dino300x132%%); /* originally Dino25, I shrunk it down to 300px x 132px so it completely fits the box*/
+    background-color: #888;
+    color: gold; /*#999*/
+    border: 1px solid #888;
+    border-radius: 0 !important;
+}
+
+/*=============
+*             *
+*   Arrows    *
+*             *
+=============*/ 
+.arrow.up {
+   background-image: url(%%VoteGray%%); 
+   background-position: 0px 0px; 
+   height: 65px; width: 54px; 
+}
+
+.arrow.upmod { 
+    background-image: url(%%VoteGold%%); 
+    background-position: 0px 0px; 
+    height: 65px; width: 54px;  
+}
+
+.down { 
+    display: none; 
+}
+
+.link .score {
+    display: none !important;
+}
+
+.midcol, body > .content .midcol  { 
+    min-width:54px !important; 
+}
+
+/*=============
+*             *
+*   Expando   *
+*   Buttons   *
+*             *
+=============*/
+/*Selftext*/
+.expando-button.collapsed.selftext {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -2px;
+}
+.expando-button.collapsed.selftext:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -2px;
+}
+.expando-button.selftext.expanded {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -26px;
+}
+.expando-button.selftext.expanded:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -26px;
+}
+/*videos*/
+.expando-button.video.collapsed {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -52px;
+}
+.expando-button.video.collapsed:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -52px;
+}
+.expando-button.video.expanded {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -76px;
+}
+.expando-button.video.expanded:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -76px;
+}
+/*single imgaes*/
+.expando-button.image.collapsedExpando {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -102px;
+}
+.expando-button.image.collapsedExpando:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -102px;
+}
+.expando-button.image.expanded {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -126px;
+}
+.expando-button.image.expanded:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -126px;
+}
+/*Galleries*/
+.expando-button.image.gallery.collapsedExpando {    
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -152px;
+}
+.expando-button.image.gallery.collapsedExpando:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -152px;
+}
+.expando-button.image.gallery.expanded {    
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -176px;
+}
+.expando-button.image.gallery.expanded:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -176px;
+}
+/*gif, gifv, gfy... all of those fun bits!*/
+.expando-button.video-muted.collapsed {    
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -202px;
+}
+.expando-button.video-muted.collapsed:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -202px;
+}
+.expando-button.video-muted.expanded {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: 0px -226px;
+}
+.expando-button.video-muted.expanded:hover {
+    background-image: url(%%Expando-Black-and-Gold%%);
+    background-position: -30px -226px;
+}
+
+
+/*=============
+*             *
+*   Sidebar   *
+*             *
+=============*/
+.side {
+    padding: 5px;
+    background-color: #333;
+    border:1px solid #000000;
+    box-shadow:1px 1px 3px 0 #000000;
+    margin: 37px 5px 0 10px;
+    background:#292929;
+    z-index:auto;
+    color: #888 !important;
+}
+
+.side .md {
+    color: #888;
+}
+
+#search input[type="text"]:focus {
+    outline: none; 
+}
+
+#search input {
+    text-align:center;
+    font-style: italic;
+    color: #888 !important;
+    background-color: #333;
+}
+
+#search input[type=submit],
+#search input[type=submit]:hover {
+    background-image: url(%%search-small-2%%)!important;
+    background-position: -2px -2px;
+    height: 20px;
+    width: 20px;
+}
+
+/* Replace "readers" with something else */
+div.titlebox .subscribers span.word { 
+    display: none !important; 
+}
+div.titlebox .subscribers span.number:after { 
+    content: " Explorers" 
+}
+div.titlebox .users-online span.word { 
+    display: none !important; 
+}
+div.titlebox .users-online span.number:after { 
+    content: " discovering new subreddits" 
+}
+
+.flairtoggle, 
+.leavecontributor-button,
+.leavemoderator {
+    background: transparent !important;
+}
+
+.side .content {
+    background-color: #292929 !important
+}
+.morelink {
+    background-image: none !important;
+    background-color: #E0CB38 !important;
+    border: none !important;
+    color: #292929 !important;
+    font-weight: normal;
+    font-style: italic;
+} 
+
+.morelink a {
+    color:#292929 !important;
+}
+
+.morelink a:hover {
+    background-color: #292929 !important;
+    color: #E0CB38 !important;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.morelink .nub {
+    display:none !important;
+}
+
+.create {
+    display: none !important;
+}
+
+.icon-menu.hover li a{
+    background-color: #333;
+}
+
+.sidecontentbox .helplink + .title h1 { 
+    font-size: 0 !important 
+}
+
+.sidecontentbox .helplink + .title h1:before { 
+    font-size: 10pt !important; content: "AWESOME WRITERS" 
+}
+
+/*Twitter Feed Graphic*/ 
+a[href="http://twitter.com/SRotD"]:after { 
+    width: 90px; 
+    height: 18px; 
+    content: "";
+    margin: 5px 0 0 0; 
+    background-image: url(%%Final%%); 
+    background-position: -0px; 
+    display: inline-block; 
+    cursor: pointer;
+    position: relative;
+}
+
+.side .titlebox .number,
+.side .titlebox .word 
+{
+	padding: 5px 0;
+	display: inline-block;
+}
+/*Nominate Button*/
+.side .md a[href*="Nomination"]:before {
+    display: block;
+    height: 70px;
+    width: 280px;
+    background: url(%%nominate2%%);
+    position: absolute;
+    z-index: 1000;
+    content: "";
+    left: 0px;
+    top: 0px
+}
+
+.side .md  a[href*="Nomination"] {
+    color: #336699;
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 20px;
+    background: url(%%nominate2%%);
+    border: 0px solid #C4DBF1;
+    font-weight: bold;
+    height: 70px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.side .md blockquote:nth-of-type(1) {
+    position: absolute;
+    top: 95px;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-left: none;
+}
+/*Intership Program*/
+a[href="http://redd.it/2erl5o"]:after { 
+    width: 280px; height: 280px;
+    content: ""; 
+    background-image: url(%%SIP3%%);             
+    background-position: -0px;
+    display: inline-block;
+    position: relative;
+ }
+ 
+/*Award Image in the sidebar*/
+.side .titlebox .usertext {
+	padding-top: 220px;
+	background-image: url(%%AWARD2%%);
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+	margin-bottom: 140px;
+}
+
+.side .titlebox .usertext h1,
+.side .titlebox .usertext h2,
+.side .titlebox .usertext h3,
+.side .titlebox .usertext h4,
+.side .titlebox .usertext h5,
+.side .titlebox .usertext h6
+{
+	color: #888;
+}
+
+/* Sidebar Title now a logo */
+.titlebox h1 a {
+    background-image: url(%%NewLOGO-White%%); /*Logo145x60*/
+    background-repeat: no-repeat;
+    background-position: 0 -0px;
+    display: block;
+    margin: 0 auto;
+    width: 185px;
+    height: 75px;
+    text-indent: -9999px;
+    padding: 10px 0
+    }
+.titlebox h1 a:hover {
+    background-image: url(%%NewLOGO-Gold%%); /*Title2*/
+    }
+    
+/*Length of sidebar darkgray box*/
+.side .titlebox {
+	padding: 10px;
+	margin: 0 0 -150px 0;
+}
+
+.side .titlebox h1.redditname,
+.side .titlebox h1.redditname a
+{
+	display: none;
+}
+
+/*Makes the sidebox below submit a link & create community transparent*/
+.side form.toggle {
+    background-color:transparent !important;
+}
+.sidebox .spacer {
+    background-color:transparent !important;
+}
+
+.titlebox form.toggle { 
+	background-color: transparent;
+	background-image: none;
+	padding: 0;
+}
+
+.leavemoderator-button {
+	clear: both;
+	padding-top: 10px;
+}
+
+.titlebox .bottom {
+	display: none;
+}
+
+/*Google Docs Icon Graphic*/ 
+a[href="https://spreadsheets.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0Ak2FnIe8J2gxdHd1ckxkSWNaTUtWaWtoX0poVE54cmc&output=html"]:after { 
+    width: 24px; 
+    height: 23px; 
+    content: "";
+    margin: 5px 0 0 0; 
+    background-image: url(%%GDS%%); 
+    background-position: -0px; 
+    display: inline-block;
+    position: relative; 
+    /*cursor: pointer*/
+}
+
+
+/*=============
+*             *
+* Text Style  *
+*             *
+=============*/
+/*I hope...*/
+.midcol {
+    min-width: 60px
+    }
+
+.link .usertext .md { 
+	padding: 5px 10px;
+	border: 1px solid black;
+	border-radius: 0 !important;
+	background: #888;
+	color: #000!important;
+}
+
+.link .md > blockquote { 
+	border: 1px solid #000 !important; 
+	background: #4D4D4D/*#404040*/!important; 
+	margin: 0px; 
+	font-weight: normal; 
+	color: #FFF !important; 
+	padding: 0px 10px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+.link .md blockquote blockquote { 
+	border: 1px solid #000 !important; 
+	background: #888 !important; 
+	margin: 0px 0 1em 0; 
+	font-weight: normal; 
+	color: #000 !important; 
+	padding: 2px 10px !important; 
+	border-bottom-width: 2px!important; 
+	box-shadow:1px 1px 3px 0 #000000!important;
+}
+
+.md  blockquote { 
+	border: 0 0 0 2px solid #000 !important; 
+	background: #4D4D4D/*#404040*/!important; 
+	font-weight: normal; 
+	color: #FFF !important; 
+	/*padding: 0px 10px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;*/
+}
+
+.link .md h1 { 
+	margin: 0; 
+	font-weight: bold; 
+	text-shadow: ;
+}
+
+.link .md h1 a { 
+	font-size: 1.65em; 
+	letter-spacing: -0.02em; 
+	/*text-shadow: #ddd 0px 2px 2px; */
+}
+
+.link .md h1 a:hover { 
+	color: #47a 
+}
+
+.link .md h2 { 
+	margin: 1em 0 .3em 0px; 
+	font-size: 1.25em; 
+}
+
+.link .md hr { 
+	border: none; 
+	border-bottom: 1px dotted #777; 
+}
+
+.link .md ul { 
+	margin: 10px 1em; 
+}
+
+.title {
+    font-weight: bold !important;
+    font-size: 1.35em !important;
+}
+
+
+div.content #siteTable div.link div.entry p.title a.title {
+    color: #E0CB38;
+}
+
+a.title:visited {
+    color: #999 !important; 
+    font-weight: bold!important;
+}
+div.side a:hover{
+    color: #E0CB38;
+}
+ 
+.md h2 {
+    color: #000;
+    font-weight: bold;
+}
+ 
+.md code {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+/*Huge comment font, to use just put ####before your text*/
+/*Sarcatic comment font, to use just put #####before your text*/
+h4{
+    font: 250% times !important;
+    color: gold !important;
+    text-shadow: black 1px 2px 1px!important;
+}
+h5{
+    font: 135% comic !important;
+    color: #0EE32A !important; /*6B30B3*/
+    text-shadow: yellow 1px 0px 30px!important;
+}
+h6{
+    font: 150% comic !important;
+    color: #6B30B3!important;
+}
+
+/*=============
+*             *
+*  Flair!!!!  *
+*             *
+=============*/
+
+.flair:after {
+    display: inline-block;
+}
+
+.flair-WRITER {
+    padding: 1px 4px 1px 4px;
+    border: 0px solid black !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #595959; /*1F1F1F*/
+    font-weight: 700;
+    color: #E0CB38;
+    }
+
+.flair-settings h1 {
+    color: #666;
+}
+/*Post Flair Section!*/
+/* Makes flair for mods only */
+body:not(.moderator) .flairoptionpane .linkflair-willpower { display: none; }
+body:not(.moderator) .flairoptionpane .flair-willpower {display: none; }
+
+body:not(.moderator) .flairoptionpane .linkflair-valentine { display: none; }
+body:not(.moderator) .flairoptionpane .flair-valentine {display: none; }
+
+body:not(.moderator) .flairoptionpane .linkflair-photos { display: none; }
+body:not(.moderator) .flairoptionpane .flair-photos {display: none; }
+
+/* Subreddit Week Flair */
+/*.linkflair-willpower .linkflairlabel {
+    font-size: 9px;
+    font-weight: bold;
+    color: #E0CB38;
+    background-color: #595959;
+    border-color: #E0CB38;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.linkflair-valentine .linkflairlabel {
+    font-size: 9px;
+    font-weight: bold;
+    color: pink;
+    background-color: #595959;
+    border-color: pink;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.linkflair-photos .linkflairlabel {
+    font-size: 9px;
+    font-weight: bold;
+    color: #900000;
+    background-color: lightgray;
+    border-color: #900000 ;
+    border-width: 2px;
+    border-radius: 4px;
+}*/
+.linkflairlabel {
+    display:block;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    border-width: 0px;
+    border-radius: 0px;
+    float: right;
+    color: #9A9898;
+}
+
+.flairoptionpane li {
+    height: 22px;
+}
+
+.title .linkflairlabel {
+    display: table;
+    background-color: transparent;
+    border-width: 0px;
+    border-radius: 0px;
+    color: #C1BFBF;
+    letter-spacing: 2px;
+    font-weight: normal;
+    overflow: visible;
+    max-width: 98%;
+}
+
+.drop-choices{
+    width: auto;
+}
+.thing.linkflair .linkflairlabel {
+    border-bottom: solid 2px #808080;
+}
+
+.thing.linkflair.linkflair-willpower .linkflairlabel {
+    border-bottom: solid 2px #E0CB38;
+}
+
+.thing.linkflair.linkflair-valentine .linkflairlabel {
+    border-bottom: pink solid 2px;
+}
+
+.thing.linkflair.linkflair-photos .linkflairlabel {
+    border-bottom: solid 2px #900000;
+}
+
+/*.thing.linkflair.linkflair-d .linkflairlabel {
+    border-bottom: solid 2px #79e1d1;
+}
+
+.thing.linkflair.linkflair-e .linkflairlabel {
+    border-bottom: solid 2px #e1db79;
+}
+
+.thing.linkflair.linkflair-f .linkflairlabel {
+    border-bottom: solid 2px #b179e1;
+}
+
+.thing.linkflair.linkflair-g .linkflairlabel {
+    border-bottom: solid 2px #FCDFFF;
+}*/
+
+.flairgrant.flairlist {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+    color: #888;
+    margin: 4px 0 0 0;
+}
+
+.flairtemplate.flairrow {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+    margin: 4px 0 0 0;
+    color: #888;
+}
+
+.clearflairtemplates-button {
+    background: transparent !important;
+    border: 1px solid #000 !important;
+}
+
+.usertable>.toggle .togglebutton, 
+.usertable>.toggle .error {
+    border-left: 1px solid #000;
+}
+
+.tabpane-content {
+    margin: 0 320px 0 0;
+}
+
+/*=============
+*             *
+*    Footer   *
+*             *
+=============*/
+
+.footer-parent {
+    background-image: url(%%SROTD220%%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 100px;
+}
+
+.flair-settings.fancy-settings {
+    margin: 40px 0 0 0;
+}
+
+.pretty-form .linefield {
+    background: transparent;
+    color: White;
+    border: 1px solid black;
+}
+
+.pretty-form .linefield .title {
+    color: #E0CB38 !important;
+}
+
+.flair-jump {
+    background: transparent;
+    }
+    
+.flair-jump .title {
+    color: #E0CB38 !important;
+}
+
+.tabpane-content {
+    border: 1px solid black;
+}
+
+.infobar {
+    margin: 40px 0 0 0;
+}
+
+/*=============
+*             *
+*   Toolbox   *
+*   Tweaks    *
+*             *
+=============*/
+
+.menuarea.modtools {
+    margin: 40px 320px 0 0 !important;
+}
+
+.tb-toolbar {
+    background-color: #333!important;
+    border-top: 1px solid black !important;
+    color: #fff;
+}
+
+.mod-toolbox .menuarea.modtools {
+    z-index: auto!important;
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+    color: #888;
+}
+
+.pretty-button {
+    background: transparent;
+}
+
+
+/*=============
+*             *
+*     RES     *
+*             *
+=============*/
+
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+.res .RES-keyNav-activeElement{
+    background: transparent !important;
+}
+.res .RES-keyNav-activeElement {
+    background:none!important;
+}
+
+.RESMacroDropdownTitle,
+.RESCharCounter {
+    color: #FFF !important;
+}
+.voteWeight {
+    color: #000 !important;
+}
+
+/*=============
+*             *
+* Signatures  *
+*             *
+=============*/
+
+a[href="/Polar"]:after { content: url(%%Polar%%) }  
+a[href="/Josh"]:after { content: url(%%Josh%%) }
+a[href="/Respect"]:after { content: url(%%respect%%) }
+a[href="/Jax"]:after { content: url(%%jax%%) }
+a[href="/qweiopasd"]:after { content: url(%%qweiopasd%%) }
+a[href="/Lurlur"]:after { content: url(%%lurlur%%) }
+a[href="/Xavier"]:after { content: url(%%xavier%%) }
+a[href="/Taydolph"]:after { content: url(%%taydolph%%) }
+a[href="/Rya"]:after { content: url(%%rya%%) }
+a[href="/NGTiger"]:after { content: url(%%ngtiger%%) }
+a[href="/NENS"]:after { content: url(%%no-eat-no-sleep%%) }
+a[href="/Terrfic"]:after { content: url(%%Terrfic%%) }
+a[href="/Zadoc"]:after { content: url(%%zadoc%%) }
+/*a[href="/"]:after { content: url(%%%%) }*/  
+  
+/*Remove "View Images"*/  
+  
+#header-bottom-left .tabmenu li a#viewImagesButton {
+  display: none;
+}    
+  
+/*=============
+*             *
+*     Wiki    *
+*             *
+=============*/
+
+.md.wiki {
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+}
+
+/*=============
+*             *
+* Submit Page *
+*             *
+=============*/
+
+.roundfield {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+}
+
+.roundfield .title,
+.roundfield-content {
+    color: #888 !important;
+}
+
+.content.submit .info-notice {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+    color: #888;
+}
+
+#text-desc.infobar {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+    color: #888;
+}
+
+.text-button.choice,
+.link-button.choice {
+    display: none !important;
+}
+
+.formtabs-content {
+    border-top: 4px solid #292929;
+}
+
+.submit button.btn {
+    background: #292929;
+    color: #FFF;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+}
+
+.submit button.btn:hover {
+    border:1px solid #E0CB38;
+    box-shadow:1px 1px 3px 0 #c9b632
+}
+
+.submit button.btn:selected {
+    border:1px solid #E0CB38;
+    box-shadow:1px 1px 3px 0 #c9b632
+}
+
+/*=============
+*             *
+*   Modmail   *
+*     Page    *
+*             *
+=============*/
+
+.message.recipient>.entry {
+    color: #485 !important;
+}
+
+.message .subject .correspondent {
+    background: #4a4a4a;
+    border: 1px solid #E0CB38;
+}
+
+.recipient.message-reply.message,
+.message-reply.message {
+    /*background: #888 !important;
+    color: #000 !important;*/
+    margin-bottom: 8px !important;
+}
+
+/*=============
+*             *
+*  Subreddit  *
+*  Settings   *
+*             *
+=============*/
+
+.pretty-form .linefield {
+    background: #292929;
+    border:1px solid #000;
+    box-shadow: 1px 1px 3px 0 #000;
+}
+
+/*=============
+*             *
+* Search Page *
+*             *
+=============*/
+
+.searchpane {
+    margin: 37px 320px 5px 0;
+    box-shadow: 1px 1px 3px 0 #000;
+    background: #4a4a4a url(%%search-large-2%%) 48px center no-repeat;
+}
